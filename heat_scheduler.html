@@ -277,6 +277,28 @@
         let rawData = [];
         let timeBounds = { min: null, max: null };
 
+        // Load CSV data and initialize Gantt
+        function loadCSVData(csvData) {
+            rawData = csvData.filter(r => r['Start Date'] && r['End Date']);
+            initGantt();
+        }
+
+        // Auto-load default CSV file on page load
+        fetch('Project Schedule - data2.csv')
+            .then(response => response.ok ? response.text() : Promise.reject())
+            .then(csvText => {
+                Papa.parse(csvText, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true,
+                    complete: res => loadCSVData(res.data)
+                });
+            })
+            .catch(() => {
+                // Silent fail if CSV doesn't exist - user can upload manually
+                console.log('No default CSV found, waiting for manual upload');
+            });
+
         document.getElementById('csvFileInput').addEventListener('change', e => {
             const file = e.target.files[0];
             if (!file) return;
@@ -285,8 +307,7 @@
                 dynamicTyping: true,
                 skipEmptyLines: true,
                 complete: res => {
-                    rawData = res.data.filter(r => r['Start Date'] && r['End Date']);
-                    initGantt();
+                    loadCSVData(res.data);
                 }
             });
         });
