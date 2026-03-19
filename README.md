@@ -12,8 +12,8 @@ A lightweight, browser-based Gantt chart viewer that renders project schedules f
 
 ## Usage
 
-1. Open `heat_scheduler.html` (or `index.html`) in any modern web browser
-2. The scheduler automatically loads the `Project Schedule - data2.csv` file
+1. Open `csv-gantt-scheduler.html` (or `index.html`) in any modern web browser
+2. The scheduler automatically loads the `sample-project-schedule.csv` file
 3. View your project timeline with milestones, tasks, and progress tracking
 
 **Note:** You can also upload your own CSV files using the "Import" button.
