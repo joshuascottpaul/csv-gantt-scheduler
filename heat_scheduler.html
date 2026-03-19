@@ -280,23 +280,30 @@
         // Load CSV data and initialize Gantt
         function loadCSVData(csvData) {
             rawData = csvData.filter(r => r['Start Date'] && r['End Date']);
+            console.log('Loaded', rawData.length, 'rows from CSV');
             initGantt();
         }
 
         // Auto-load default CSV file on page load
-        fetch('Project Schedule - data2.csv')
-            .then(response => response.ok ? response.text() : Promise.reject())
+        fetch('Project%20Schedule%20-%20data2.csv')
+            .then(response => {
+                console.log('CSV fetch status:', response.status);
+                return response.ok ? response.text() : Promise.reject();
+            })
             .then(csvText => {
+                console.log('CSV text length:', csvText.length);
                 Papa.parse(csvText, {
                     header: true,
                     dynamicTyping: true,
                     skipEmptyLines: true,
-                    complete: res => loadCSVData(res.data)
+                    complete: res => {
+                        console.log('Parsed rows:', res.data.length);
+                        loadCSVData(res.data);
+                    }
                 });
             })
-            .catch(() => {
-                // Silent fail if CSV doesn't exist - user can upload manually
-                console.log('No default CSV found, waiting for manual upload');
+            .catch(err => {
+                console.log('CSV auto-load failed:', err);
             });
 
         document.getElementById('csvFileInput').addEventListener('change', e => {
