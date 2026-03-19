@@ -1,0 +1,136 @@
+Project ID,Project Name,Milestone ID,Milestone,Type,Task Name,Progress,Notes,Start Date,End Date
+P1,E-Commerce Platform Redesign,M1,Discovery,Sustainment,Stakeholder Interviews,100,"Phase 1: Research & Discovery
+- Interview key stakeholders
+- Analyze current pain points
+Phase 2: Design & Implementation",2026-01-05,2026-01-31
+P1,E-Commerce Platform Redesign,M1,Discovery,Sustainment,User Research,100,,2026-01-05,2026-01-31
+P1,E-Commerce Platform Redesign,M1,Discovery,Sustainment,Competitive Analysis,100,,2026-01-10,2026-02-05
+P1,E-Commerce Platform Redesign,M2,Design,Innovation,Wireframes - Homepage,100,,2026-02-01,2026-02-28
+P1,E-Commerce Platform Redesign,M2,Design,Innovation,Wireframes - Product Pages,75,,2026-02-10,2026-03-05
+P1,E-Commerce Platform Redesign,M2,Design,Innovation,Wireframes - Checkout Flow,75,,2026-02-15,2026-03-10
+P1,E-Commerce Platform Redesign,M2,Design,Innovation,Visual Design System,50,,2026-03-01,2026-03-31
+P1,E-Commerce Platform Redesign,M3,Development,Innovation,Frontend Setup,100,,2026-03-15,2026-04-15
+P1,E-Commerce Platform Redesign,M3,Development,Innovation,Backend API Development,25,,2026-04-01,2026-06-30
+P1,E-Commerce Platform Redesign,M3,Development,Innovation,Database Migration,0,,2026-05-01,2026-06-15
+P1,E-Commerce Platform Redesign,M4,Testing,Innovation,QA Testing,0,,2026-06-15,2026-07-15
+P1,E-Commerce Platform Redesign,M4,Testing,Innovation,UAT - User Acceptance,0,,2026-07-01,2026-07-31
+P1,E-Commerce Platform Redesign,M5,Launch,Sustainment,Production Deployment,0,,2026-08-01,2026-08-15
+P2,Mobile App Development,M1,Planning,Sustainment,Requirements Gathering,100,,2026-02-01,2026-02-28
+P2,Mobile App Development,M1,Planning,Sustainment,Technical Architecture,100,,2026-02-15,2026-03-15
+P2,Mobile App Development,M2,iOS Development,Innovation,Core Features,50,,2026-03-01,2026-05-31
+P2,Mobile App Development,M2,iOS Development,Innovation,Push Notifications,25,,2026-04-01,2026-05-15
+P2,Mobile App Development,M2,iOS Development,Innovation,Offline Mode,0,,2026-05-01,2026-06-15
+P2,Mobile App Development,M3,Android Development,Innovation,Core Features,50,,2026-03-01,2026-05-31
+P2,Mobile App Development,M3,Android Development,Innovation,Push Notifications,25,,2026-04-01,2026-05-15
+P2,Mobile App Development,M3,Android Development,Innovation,Offline Mode,0,,2026-05-01,2026-06-15
+P2,Mobile App Development,M4,Backend Services,Innovation,API Development,75,,2026-02-15,2026-04-30
+P2,Mobile App Development,M4,Backend Services,Innovation,Authentication Service,100,,2026-02-15,2026-03-31
+P2,Mobile App Development,M5,Testing,Innovation,Device Testing,0,,2026-06-01,2026-06-30
+P2,Mobile App Development,M5,Testing,Innovation,App Store Submission,0,,2026-07-01,2026-07-31
+P3,Data Analytics Dashboard,M1,Requirements,Sustainment,Business Requirements,100,,2026-01-15,2026-02-15
+P3,Data Analytics Dashboard,M1,Requirements,Sustainment,Data Source Analysis,100,,2026-02-01,2026-02-28
+P3,Data Analytics Dashboard,M2,Data Pipeline,Innovation,ETL Development,75,,2026-03-01,2026-04-30
+P3,Data Analytics Dashboard,M2,Data Pipeline,Innovation,Data Warehouse Setup,50,,2026-03-15,2026-05-15
+P3,Data Analytics Dashboard,M3,Frontend,Innovation,Dashboard UI,25,,2026-04-01,2026-06-30
+P3,Data Analytics Dashboard,M3,Frontend,Innovation,Chart Components,25,,2026-04-15,2026-06-15
+P3,Data Analytics Dashboard,M3,Frontend,Innovation,Report Generator,0,,2026-05-01,2026-07-31
+P3,Data Analytics Dashboard,M4,Integration,Innovation,API Integration,0,,2026-06-01,2026-07-15
+P3,Data Analytics Dashboard,M5,Deployment,Sustainment,Production Release,0,,2026-08-01,2026-08-31
+P4,Cloud Migration,M1,Assessment,Sustainment,Infrastructure Audit,100,,2026-01-01,2026-02-28
+P4,Cloud Migration,M1,Assessment,Sustainment,Cost Analysis,100,,2026-02-01,2026-03-15
+P4,Cloud Migration,M2,Planning,Sustainment,Migration Strategy,100,,2026-03-01,2026-04-15
+P4,Cloud Migration,M2,Planning,Sustainment,Security Review,75,,2026-03-15,2026-04-30
+P4,Cloud Migration,M3,Migration,Innovation,Database Migration,50,,2026-04-15,2026-06-30
+P4,Cloud Migration,M3,Migration,Innovation,Application Migration,25,,2026-05-01,2026-07-31
+P4,Cloud Migration,M3,Migration,Innovation,Storage Migration,25,,2026-05-15,2026-07-15
+P4,Cloud Migration,M4,Testing,Innovation,Performance Testing,0,,2026-07-01,2026-08-15
+P4,Cloud Migration,M4,Testing,Innovation,Security Testing,0,,2026-07-15,2026-08-31
+P4,Cloud Migration,M5,Cutover,Sustainment,Production Switch,0,,2026-09-01,2026-09-15
+P5,Customer Portal,M1,Design,Sustainment,UX Research,100,,2026-03-01,2026-03-31
+P5,Customer Portal,M1,Design,Sustainment,UI Design,75,,2026-03-15,2026-04-30
+P5,Customer Portal,M2,Development,Innovation,Account Management,50,,2026-04-15,2026-06-15
+P5,Customer Portal,M2,Development,Innovation,Order History,50,,2026-04-15,2026-06-15
+P5,Customer Portal,M2,Development,Innovation,Support Tickets,25,,2026-05-01,2026-06-30
+P5,Customer Portal,M2,Development,Innovation,Live Chat,0,,2026-05-15,2026-07-15
+P5,Customer Portal,M3,Integration,Innovation,CRM Integration,25,,2026-05-01,2026-06-30
+P5,Customer Portal,M3,Integration,Innovation,Payment Gateway,25,,2026-05-15,2026-07-15
+P5,Customer Portal,M4,Testing,Innovation,UAT,0,,2026-07-01,2026-07-31
+P5,Customer Portal,M5,Launch,Sustainment,Go Live,0,,2026-08-01,2026-08-15
+P6,API Gateway,M1,Setup,Sustainment,Infrastructure Setup,100,,2026-02-01,2026-02-28
+P6,API Gateway,M1,Setup,Sustainment,Security Configuration,100,,2026-02-15,2026-03-15
+P6,API Gateway,M2,Development,Innovation,Rate Limiting,75,,2026-03-01,2026-04-15
+P6,API Gateway,M2,Development,Innovation,Authentication,75,,2026-03-01,2026-04-15
+P6,API Gateway,M2,Development,Innovation,Logging & Monitoring,50,,2026-03-15,2026-04-30
+P6,API Gateway,M3,Integration,Innovation,Service Integration,25,,2026-04-01,2026-05-31
+P6,API Gateway,M4,Testing,Innovation,Load Testing,0,,2026-05-15,2026-06-15
+P6,API Gateway,M5,Deployment,Sustainment,Production Release,0,,2026-06-15,2026-06-30
+P7,Marketing Automation,M1,Requirements,Sustainment,Marketing Requirements,100,,2026-04-01,2026-04-30
+P7,Marketing Automation,M1,Requirements,Sustainment,Tool Selection,100,,2026-04-15,2026-05-15
+P7,Marketing Automation,M2,Setup,Sustainment,Platform Configuration,75,,2026-05-01,2026-05-31
+P7,Marketing Automation,M2,Setup,Sustainment,Template Design,50,,2026-05-15,2026-06-15
+P7,Marketing Automation,M3,Integration,Innovation,CRM Integration,25,,2026-05-15,2026-06-30
+P7,Marketing Automation,M3,Integration,Innovation,E-commerce Integration,0,,2026-06-01,2026-07-15
+P7,Marketing Automation,M4,Campaigns,Sustainment,Email Campaigns,0,,2026-06-15,2026-07-31
+P7,Marketing Automation,M4,Campaigns,Sustainment,Social Media Automation,0,,2026-07-01,2026-08-15
+P8,Security Enhancement,M1,Audit,Sustainment,Security Assessment,100,,2026-01-15,2026-02-28
+P8,Security Enhancement,M1,Audit,Sustainment,Penetration Testing,100,,2026-02-01,2026-03-15
+P8,Security Enhancement,M2,Remediation,Sustainment,Vulnerability Fixes,75,,2026-03-01,2026-04-30
+P8,Security Enhancement,M2,Remediation,Sustainment,Security Patches,75,,2026-03-01,2026-04-30
+P8,Security Enhancement,M3,Implementation,Innovation,2FA Implementation,50,,2026-04-01,2026-05-31
+P8,Security Enhancement,M3,Implementation,Innovation,SSO Integration,25,,2026-04-15,2026-06-15
+P8,Security Enhancement,M4,Monitoring,Innovation,SIEM Setup,25,,2026-05-01,2026-06-30
+P8,Security Enhancement,M5,Training,Sustainment,Security Awareness,0,,2026-06-01,2026-06-30
+P9,Inventory Management,M1,Analysis,Sustainment,Current State Analysis,100,,2026-03-01,2026-03-31
+P9,Inventory Management,M1,Analysis,Sustainment,Requirements Definition,100,,2026-03-15,2026-04-15
+P9,Inventory Management,M2,Development,Innovation,Inventory Tracking,50,,2026-04-15,2026-06-30
+P9,Inventory Management,M2,Development,Innovation,Stock Alerts,25,,2026-05-01,2026-06-30
+P9,Inventory Management,M2,Development,Innovation,Reorder Automation,0,,2026-05-15,2026-07-15
+P9,Inventory Management,M3,Integration,Innovation,Supplier Integration,25,,2026-06-01,2026-07-31
+P9,Inventory Management,M3,Integration,Innovation,Warehouse Integration,0,,2026-06-15,2026-08-15
+P9,Inventory Management,M4,Testing,Innovation,UAT,0,,2026-08-01,2026-08-31
+P9,Inventory Management,M5,Deployment,Sustainment,Go Live,0,,2026-09-01,2026-09-15
+P10,HR System Upgrade,M1,Planning,Sustainment,Requirements Gathering,100,,2026-02-01,2026-03-15
+P10,HR System Upgrade,M1,Planning,Sustainment,Vendor Selection,100,,2026-03-01,2026-04-15
+P10,HR System Upgrade,M2,Configuration,Sustainment,System Setup,75,,2026-04-15,2026-05-31
+P10,HR System Upgrade,M2,Configuration,Sustainment,Workflow Configuration,50,,2026-05-01,2026-06-15
+P10,HR System Upgrade,M3,Migration,Innovation,Data Migration,25,,2026-05-15,2026-06-30
+P10,HR System Upgrade,M3,Migration,Innovation,Employee Records,25,,2026-05-15,2026-06-30
+P10,HR System Upgrade,M4,Training,Sustainment,Admin Training,0,,2026-06-15,2026-07-15
+P10,HR System Upgrade,M4,Training,Sustainment,User Training,0,,2026-06-15,2026-07-15
+P10,HR System Upgrade,M5,Go-Live,Sustainment,Production Launch,0,,2026-07-15,2026-07-31
+P11,Content Management System,M1,Discovery,Sustainment,Content Audit,100,,2026-04-01,2026-04-30
+P11,Content Management System,M1,Discovery,Sustainment,Platform Evaluation,100,,2026-04-15,2026-05-15
+P11,Content Management System,M2,Setup,Sustainment,CMS Installation,75,,2026-05-01,2026-05-31
+P11,Content Management System,M2,Setup,Sustainment,Theme Development,50,,2026-05-15,2026-06-30
+P11,Content Management System,M3,Migration,Innovation,Content Migration,25,,2026-06-01,2026-07-31
+P11,Content Management System,M3,Migration,Innovation,SEO Redirects,0,,2026-06-15,2026-07-31
+P11,Content Management System,M4,Testing,Innovation,QA Testing,0,,2026-07-15,2026-08-15
+P11,Content Management System,M5,Launch,Sustainment,Site Launch,0,,2026-08-15,2026-08-31
+P12,Payment Processing,M1,Research,Sustainment,Provider Analysis,100,,2026-03-01,2026-03-31
+P12,Payment Processing,M1,Research,Sustainment,Compliance Review,100,,2026-03-15,2026-04-15
+P12,Payment Processing,M2,Integration,Innovation,Payment Gateway,50,,2026-04-15,2026-06-15
+P12,Payment Processing,M2,Integration,Innovation,Recurring Payments,25,,2026-05-01,2026-06-30
+P12,Payment Processing,M2,Integration,Innovation,Refund Processing,25,,2026-05-15,2026-07-15
+P12,Payment Processing,M3,Testing,Innovation,Security Testing,0,,2026-06-15,2026-07-31
+P12,Payment Processing,M3,Testing,Innovation,PCI Compliance,0,,2026-07-01,2026-07-31
+P12,Payment Processing,M4,Deployment,Sustainment,Production Release,0,,2026-08-01,2026-08-15
+P13,Chatbot Implementation,M1,Design,Sustainment,Conversation Flow,100,,2026-05-01,2026-05-31
+P13,Chatbot Implementation,M1,Design,Sustainment,Intent Definition,75,,2026-05-15,2026-06-15
+P13,Chatbot Implementation,M2,Development,Innovation,NLP Training,50,,2026-06-01,2026-07-31
+P13,Chatbot Implementation,M2,Development,Innovation,Integration,25,,2026-06-15,2026-08-15
+P13,Chatbot Implementation,M3,Testing,Innovation,Conversation Testing,0,,2026-07-15,2026-08-31
+P13,Chatbot Implementation,M4,Launch,Sustainment,Go Live,0,,2026-09-01,2026-09-15
+P14,Performance Optimization,M1,Analysis,Sustainment,Performance Audit,100,,2026-04-01,2026-04-30
+P14,Performance Optimization,M1,Analysis,Sustainment,Bottleneck Identification,100,,2026-04-15,2026-05-15
+P14,Performance Optimization,M2,Optimization,Innovation,Database Optimization,75,,2026-05-01,2026-06-15
+P14,Performance Optimization,M2,Optimization,Innovation,Code Optimization,50,,2026-05-15,2026-06-30
+P14,Performance Optimization,M2,Optimization,Innovation,CDN Implementation,25,,2026-06-01,2026-07-15
+P14,Performance Optimization,M3,Testing,Innovation,Load Testing,0,,2026-07-01,2026-07-31
+P14,Performance Optimization,M3,Testing,Innovation,Monitoring Setup,0,,2026-07-15,2026-08-15
+P15,Compliance Automation,M1,Requirements,Sustainment,Regulatory Analysis,100,,2026-05-01,2026-05-31
+P15,Compliance Automation,M1,Requirements,Sustainment,Process Mapping,100,,2026-05-15,2026-06-15
+P15,Compliance Automation,M2,Development,Innovation,Compliance Rules Engine,50,,2026-06-15,2026-08-15
+P15,Compliance Automation,M2,Development,Innovation,Reporting Module,25,,2026-07-01,2026-08-31
+P15,Compliance Automation,M3,Integration,Innovation,System Integration,0,,2026-08-01,2026-09-15
+P15,Compliance Automation,M4,Testing,Innovation,Compliance Testing,0,,2026-09-01,2026-09-30
+P15,Compliance Automation,M5,Certification,Sustainment,Audit Preparation,0,,2026-10-01,2026-10-31
