@@ -10,3 +10,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Data files
+Project Schedule - data2.csv
