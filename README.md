@@ -34,7 +34,24 @@ The CSV file should contain the following columns:
 
 ## Deployment
 
-This project is designed to be hosted on GitHub Pages. Simply enable GitHub Pages in your repository settings, and the scheduler will be available at `https://<username>.github.io/<repo>/heat_scheduler.html`.
+This project is configured for automatic deployment to GitHub Pages.
+
+### Automatic Deployment (GitHub Actions)
+
+Every push to the `main` branch automatically deploys to GitHub Pages via the included workflow (`.github/workflows/pages.yml`).
+
+**Live URL:** `https://<username>.github.io/<repo>/`
+
+### Manual Setup
+
+1. Go to your repository **Settings** → **Pages**
+2. Under **Build and deployment**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main`
+   - **Folder:** `/ (root)`
+3. Click **Save**
+
+Your site will be live at: `https://<username>.github.io/<repo>/csv-gantt-scheduler.html`
 
 ## Technologies
 
