@@ -214,8 +214,13 @@
             
             <div class="flex flex-wrap items-center gap-10">
                 <div class="flex flex-col">
-                    <span class="text-[10px] uppercase font-medium text-slate-400 mb-1">Import</span>
+                    <span class="text-[10px] uppercase font-medium text-slate-400 mb-1">Import CSV</span>
                     <input type="file" id="csvFileInput" accept=".csv">
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-medium text-slate-400 mb-1">Or Google Sheet</span>
+                    <input type="text" id="googleSheetInput" placeholder="Paste Google Sheet link..." style="width: 280px; padding: 6px 8px; font-size: 0.75rem;">
                 </div>
                 
                 <div class="flex flex-col">
@@ -317,6 +322,46 @@
                     loadCSVData(res.data);
                 }
             });
+        });
+
+        function convertGoogleSheetUrl(url) {
+            const sheetIdMatch = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
+            const gidMatch = url.match(/[#&]gid=([0-9]+)/);
+            
+            if (!sheetIdMatch) return null;
+            
+            const sheetId = sheetIdMatch[1];
+            const gid = gidMatch ? gidMatch[1] : '0';
+            
+            return `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv&gid=${gid}`;
+        }
+
+        document.getElementById('googleSheetInput').addEventListener('change', e => {
+            const url = e.target.value.trim();
+            if (!url) return;
+            
+            const exportUrl = convertGoogleSheetUrl(url);
+            if (!exportUrl) {
+                alert('Invalid Google Sheets URL');
+                return;
+            }
+            
+            fetch(exportUrl)
+                .then(response => response.text())
+                .then(csvText => {
+                    Papa.parse(csvText, {
+                        header: true,
+                        dynamicTyping: true,
+                        skipEmptyLines: true,
+                        complete: res => {
+                            loadCSVData(res.data);
+                        }
+                    });
+                })
+                .catch(err => {
+                    alert('Failed to load Google Sheet. Make sure it\'s shared publicly.');
+                    console.error(err);
+                });
         });
 
         document.getElementById('yearSelect').addEventListener('change', initGantt);
